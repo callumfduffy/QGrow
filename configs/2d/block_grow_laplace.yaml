@@ -1,0 +1,24 @@
+seed: 0
+batch_size: 500
+num_train_points: 500
+num_test_points: 500
+dim: 2 
+dataset_name: laplace
+data_filepath: null
+noise: null 
+n_qubits: 2
+depth: 6
+inputs: ["x", "y"]
+epochs: 100
+optimizer: Adam
+lr: 0.001
+ansatz_gates: [RY, RX]
+fm_gates: [RX]
+log_interval: 5
+base_dir: "../results/2d/laplace/serial_growth" 
+grow: 
+  grow_type: "serial"
+  rate: 100
+  step: 3
+  final_depth: 6
+  depth: 1

@@ -1,0 +1,24 @@
+seed: 0
+batch_size: 50
+num_train_points: 50
+num_test_points: 80
+dim: 1 
+dataset_name: student_teacher
+data_filepath: "../datasets/student_teacher_1d_depth_5.csv"
+noise: 0.5
+n_qubits: 1
+depth: 5 
+inputs: ["x"]
+epochs: 1000 
+optimizer: Adam
+lr: 0.1 
+ansatz_gates: [RY]
+fm_gates: [RX]
+log_interval: 5
+base_dir: "../results/1d/depth_5/noise_every_2_5_10/block_grow" 
+grow: 
+  grow_type: "block"
+  rate: 200 
+  step: 1 
+  final_depth: 5 
+  depth: 1

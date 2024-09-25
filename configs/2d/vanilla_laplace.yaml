@@ -1,0 +1,18 @@
+seed: 0 
+batch_size: 500 
+num_train_points: 500 
+num_test_points: 500 
+dim: 2
+dataset_name: laplace
+data_filepath: null
+noise: null 
+n_qubits: 2
+depth: 15
+inputs: ["x", "y"]
+epochs: 1000
+optimizer: Adam 
+lr: 0.001 
+ansatz_gates: [RY, RX]
+fm_gates: [RX]
+base_dir: "../results/2d/laplace/fixed" 
+grow: null
